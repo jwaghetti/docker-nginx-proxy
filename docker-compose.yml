@@ -1,14 +1,22 @@
-version: '2'
+version: '3'
+
+networks:
+  default:
+    external:
+      name: prodnetwork
+
+volumes:
+  nginx-proxy-certificates:
+
 services:
   nginx-proxy:
     image: jwilder/nginx-proxy
     container_name: nginx-proxy
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-
-  whoami:
-    image: jwilder/whoami
-    environment:
-      - VIRTUAL_HOST=whoami.local
+      - nginx-proxy-certificates:/etc/nginx/certs
+      - /docker-volumes/nginx-proxy/certificates:/etc/nginx/certs
+    restart: always
