@@ -1,3 +1,12 @@
+
+docker-compose for nginx-proxy.
+
+Official Public Repository: https://gitlab.com/jwaghetti/docker-nginx-proxy
+
+Forked from:  https://github.com/jwilder/nginx-proxy
+
+This repository tracks the forked repository.
+
 ![nginx 1.13](https://img.shields.io/badge/nginx-1.13-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Build Status](https://travis-ci.org/jwilder/nginx-proxy.svg?branch=master)](https://travis-ci.org/jwilder/nginx-proxy) [![](https://img.shields.io/docker/stars/jwilder/nginx-proxy.svg)](https://hub.docker.com/r/jwilder/nginx-proxy 'DockerHub') [![](https://img.shields.io/docker/pulls/jwilder/nginx-proxy.svg)](https://hub.docker.com/r/jwilder/nginx-proxy 'DockerHub')
 
 
